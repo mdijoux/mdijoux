@@ -12,6 +12,8 @@
     flex-direction: column;
 
     --primary-color: #45A345;
+    --primary-color-darker: #2F893F;
+    --primary-color-darkest: #255C2C;
 }
 
 .main #sh1 {
@@ -27,27 +29,10 @@
     font-size: 18pt;
 }
 
-.main h1::before {
-    display: inline-block;
-    content: "";
-    height: 5mm;
-    width: 7mm;
-    margin-right: 2mm;
-    background: url("/bullet.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    vertical-align: -9.5%;
-}
-
 .main h2 {
     font-size: 12pt;
     color: var(--primary-color);
-    /* margin: 4mm 0; */
 }
-
-/* .main h2:first-of-type {
-    margin-top: 0;
-} */
 
 .main p {
     text-align: justify;
@@ -62,17 +47,16 @@
     padding-left: 10mm;
     gap: 7mm;
 
-    background-image: url("/header-logo.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
+    position: relative;
 }
 
 .avatar {
     border-radius: 100%;
     height: 30mm;
 
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 0 0px 4pt var(--primary-color);
+    border: 4pt solid var(--primary-color-darker);
+    background-color: var(--primary-color-darkest);
 }
 
 .profile {
@@ -99,4 +83,13 @@
     flex: 1;
     overflow: hidden;
     margin-bottom: 4mm;
+}
+
+
+.bullet {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: auto;
 }

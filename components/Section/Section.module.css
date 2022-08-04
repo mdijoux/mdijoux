@@ -9,3 +9,11 @@
     padding: 0 2mm;
 }
 
+.bullet {
+    display: inline-block;
+    height: 5mm;
+    width: 7mm;
+    margin-right: 2mm;
+    vertical-align: -1pt;
+    transform: rotateY(180deg);
+}
