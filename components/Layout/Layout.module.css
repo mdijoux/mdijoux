@@ -1,0 +1,98 @@
+/* CSS declarations go here */
+
+.main {
+    -webkit-print-color-adjust: exact;
+
+    width: 210mm;
+    height: 296.9mm;
+    font-family: "Roboto", sans-serif;
+    font-size: 9pt;
+
+    display: flex;
+    flex-direction: column;
+
+    --primary-color: #45A345;
+}
+
+.main #sh1 {
+    fill: var(--primary-color);
+}
+
+.main h1,
+.main h2 {
+    text-transform: uppercase;
+}
+
+.main h1 {
+    font-size: 18pt;
+    margin-bottom: 4mm;
+}
+
+.main h1::before {
+    display: inline-block;
+    content: "";
+    height: 5mm;
+    width: 7mm;
+    margin-right: 2mm;
+    background: url("/bullet.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: -9.5%;
+}
+
+.main h2 {
+    font-size: 12pt;
+    color: var(--primary-color);
+    margin: 4mm 0;
+}
+
+.main p {
+    text-align: justify;
+}
+
+.main > header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50mm;
+    height: 50mm;
+    padding-left: 10mm;
+}
+
+.avatar {
+    border-radius: 100%;
+    height: 30mm;
+    margin-right: 5mm;
+
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.profile {
+    text-transform: uppercase;
+}
+
+.name {
+    font-size: 36pt;
+}
+
+.job {
+    font-size: 18pt;
+    color: var(--primary-color);
+}
+
+.image {
+    height: 100%;
+}
+
+.main > footer {
+    background: var(--primary-color);
+    height: 8mm;
+    
+}
+
+.content {
+    flex: 1;
+    overflow: hidden;
+    margin-bottom: 4mm;
+}

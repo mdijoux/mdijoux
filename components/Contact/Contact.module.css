@@ -1,0 +1,19 @@
+.root {
+    font-size: 10pt;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.root > svg {
+    margin-right: 4mm;
+    background: var(--primary-color);
+    border-radius: 100%;
+    border: 3pt solid var(--primary-color);
+    height: 12pt;
+    width: 12pt;
+}
+
+.root > svg path {
+    fill: white;
+}

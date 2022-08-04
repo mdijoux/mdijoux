@@ -1,0 +1,9 @@
+.skill {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+  
+.skill > .name {
+    flex: 1;
+}

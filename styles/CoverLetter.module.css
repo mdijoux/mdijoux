@@ -1,0 +1,12 @@
+.coverletter {
+    margin: 15mm;
+}
+
+.coverletter h1,
+.coverletter p {
+    margin-bottom: 10mm;
+}
+
+.coverletter p {
+    font-size: 12pt;
+}

@@ -1,0 +1,63 @@
+.resume {
+    display: flex;
+    flex-direction: row;
+}
+
+.resume aside {
+    padding: 10mm;
+    background: #414439;
+    width: 30%;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.resume aside ul > li a {
+    color: inherit;
+}
+
+.content {
+    flex: 1;
+    padding: 5mm;
+}
+
+.content > section {
+    margin-bottom: 5mm;
+}
+
+.experiences {
+    list-style: none;
+    padding: 0 2mm;
+}
+
+.curriculum {
+    list-style: none;
+    padding: 0 2mm;
+}
+
+.contacts,
+.skills,
+.languages,
+.other {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2mm;
+}
+
+.tags {
+    margin-top: 5mm;
+    display: flex;
+    gap: 2mm;
+    flex-wrap: wrap;
+}
+
+.tags > li {
+    display: inline-block;
+    padding: 1mm 2mm;
+    border-radius: 3mm;
+    line-height: 1em;
+    background: var(--primary-color);
+}

@@ -1,0 +1,25 @@
+.rater {
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+
+.rater > li + li {
+    margin-left: 2mm;
+}
+
+.rater > .full,
+.rater > .empty {
+    height: 5mm;
+    width: 5mm;
+    border-radius: 100%;
+}
+
+.rater > .full {
+    background: var(--primary-color);
+}
+
+.rater > .empty {
+    background: white;
+}

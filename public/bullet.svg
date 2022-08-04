@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="125px" height="83px" viewBox="0 0 125 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Header</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="125" height="83"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Header" transform="translate(62.500000, 41.500000) scale(-1, 1) translate(-62.500000, -41.500000) ">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask" opacity="0"></g>
+            <g id="Group" mask="url(#mask-2)">
+                <g transform="translate(-8.000000, -80.000000)">
+                    <polygon id="Triangle" fill="#255C2C" points="39.6446828 119.937008 71.8227653 162.771654 8.08998179 162.771654"></polygon>
+                    <rect id="Rectangle-2" fill="#2F893F" transform="translate(71.219773, 118.697288) rotate(-35.000000) translate(-71.219773, -118.697288) " x="44.4977736" y="33.2487834" width="53.4439981" height="170.89701"></rect>
+                    <rect id="Rectangle-2" fill="#45A345" transform="translate(117.922800, 88.015997) rotate(-35.000000) translate(-117.922800, -88.015997) " x="86.9366521" y="2.56749217" width="61.9722957" height="170.89701"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
