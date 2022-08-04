@@ -42,7 +42,6 @@ const Resume: NextPage = () => {
                                 <Skill name="ReactJS" rate={5} />
                                 <Skill name="GraphQL/Apollo" rate={4} />
                                 <Skill name="NodeJS" rate={5} />
-                                <Skill name="Cypress" rate={5} />
                             </ul>
                             <ul className={styles.tags}>
                                 <li>Agile</li>

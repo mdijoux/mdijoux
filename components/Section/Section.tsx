@@ -10,7 +10,7 @@ export const Section = ({name, children}: Props) => {
     return (
         <section className={styles.root}>
             <h1>{name}</h1>
-            {children}
+            <div className={styles.content}>{children}</div>
         </section>
     );
 };

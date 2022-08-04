@@ -4,14 +4,14 @@
 }
 
 .resume aside {
-    padding: 10mm;
+    padding: 7mm 10mm;
     background: #414439;
     width: 30%;
     color: white;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 7mm;
 }
 
 .resume aside ul > li a {
@@ -20,21 +20,19 @@
 
 .content {
     flex: 1;
-    padding: 5mm;
+    display: flex;
+    flex-direction: column;
+
+    padding: 7mm 5mm;
+    gap: 7mm;
 }
 
-.content > section {
-    margin-bottom: 5mm;
-}
-
-.experiences {
-    list-style: none;
-    padding: 0 2mm;
-}
-
+.experiences,
 .curriculum {
     list-style: none;
-    padding: 0 2mm;
+    display: flex;
+    flex-direction: column;
+    gap: 4mm;
 }
 
 .contacts,
@@ -48,7 +46,7 @@
 }
 
 .tags {
-    margin-top: 5mm;
+    padding-top: 2mm;
     display: flex;
     gap: 2mm;
     flex-wrap: wrap;
