@@ -1,0 +1,19 @@
+@media screen {
+    .root {
+        --padding: 32px;
+        min-width: calc(var(--page-width) + 2 * var(--padding));
+        padding: var(--padding);
+        background: grey;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, var(--page-width));
+        place-content: center;
+
+        gap: 32px;
+    }
+
+    .root > * {
+        border-radius: 8px;
+        overflow: hidden;
+    }
+}

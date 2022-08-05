@@ -1,9 +1,9 @@
-.resume {
+.root {
     display: flex;
     flex-direction: row;
 }
 
-.resume aside {
+.root aside {
     padding: 7mm 10mm;
     background: #414439;
     width: 30%;
@@ -14,7 +14,7 @@
     gap: 7mm;
 }
 
-.resume aside ul > li a {
+.root aside ul > li a {
     color: inherit;
 }
 
@@ -59,3 +59,4 @@
     line-height: 1em;
     background: var(--primary-color);
 }
+

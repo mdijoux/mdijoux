@@ -1,12 +1,20 @@
-.coverletter {
-    margin: 15mm;
+.root {
+    padding: 15mm;
 }
 
-.coverletter h1,
-.coverletter p {
+.root h1 {
+    font-size: 20pt;
+}
+
+.root h1 > svg {
+    transform: scale(1.1) rotateY(180deg);
+}
+
+.root h1,
+.content p {
     margin-bottom: 10mm;
 }
 
-.coverletter p {
+.content p {
     font-size: 12pt;
 }

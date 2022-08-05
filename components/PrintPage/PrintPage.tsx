@@ -1,11 +1,11 @@
 import React, { ReactNode } from "react";
-import styles from "./Layout.module.css";
+import styles from "./PrintPage.module.css";
 import clsx from "clsx";
 import { HeaderBullet } from "../icons";
 
-export const Layout = ({contentClassName, children}: {contentClassName?: string, children: ReactNode}) => {
+export const PrintPage = ({contentClassName, children}: {contentClassName?: string, children?: ReactNode}) => {
     return (
-        <main className={styles.main}>
+        <section className={styles.root}>
             <header>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/memoji.png" className={styles.avatar} alt="photo de profile" />
@@ -19,6 +19,6 @@ export const Layout = ({contentClassName, children}: {contentClassName?: string,
                 {children}
             </div>
             <footer />
-        </main>
+        </section>
     );
 }

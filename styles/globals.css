@@ -8,3 +8,10 @@
 }
 
 
+:root {
+  --page-width: 210mm;
+  --page-height: 296.9mm;
+  --primary-color: #45A345;
+  --primary-color-darker: #2F893F;
+  --primary-color-darkest: #255C2C;
+}
