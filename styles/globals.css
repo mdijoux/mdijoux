@@ -15,3 +15,71 @@
   --primary-color-darker: #2F893F;
   --primary-color-darkest: #255C2C;
 }
+
+@media print {
+  [id^=react-joyride-],
+  .not-printable {
+    display: none !important;
+  }
+}
+
+
+@keyframes beacon-inner {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  45% {
+    transform: translate(-50%, -50%) scale(0.75);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes beacon-outer {
+  0% {
+    transform: scale(1);
+  }
+
+  45% {
+    transform: scale(0.75);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.react-joyride__beacon > span:first-of-type {
+  background-color: var(--primary-color-darkest) !important;
+  z-index: 2;
+  opacity: 1 !important;
+  /* animation: none !important; */
+  animation: 1.2s ease-in-out 0s infinite normal none running beacon-inner !important;
+  transform-origin: center center;
+  /* animation-delay: 600ms; */
+}
+
+.react-joyride__beacon > span:last-of-type {
+  border-color: var(--primary-color) !important;
+  background-color: var(--primary-color-darker) !important;
+  z-index: 1;
+  opacity: 1 !important;
+
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+  animation: 1.2s ease-in-out 0s infinite normal none running beacon-outer !important;
+  animation-delay: 200ms !important;
+}
+
+.react-joyride__beacon {
+  --color: var(--primary-color);
+  --bg-color: #FFFFFF22;
+}
+
+#react-joyride-step-0 + #react-joyride-portal > .react-joyride__overlay > .react-joyride__spotlight {
+  border-radius: 50% !important;
+}

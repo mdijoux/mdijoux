@@ -8,7 +8,9 @@ export const PrintPage = ({contentClassName, children}: {contentClassName?: stri
         <section className={styles.root}>
             <header>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/memoji.png" className={styles.avatar} alt="photo de profile" />
+                <div data-tour="start" className={styles.avatar}>
+                    <img src="/memoji.png"  alt="photo de profile" />
+                </div>
                 <div className={styles.profile}>
                     <div className={styles.name}>Marc DIJOUX</div>
                     <div className={styles.job}>Lead Developer</div>
