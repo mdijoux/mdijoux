@@ -10,7 +10,7 @@
 
     font-size: 12pt;
     text-transform: uppercase;
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 .root h3 > :not(.period) {

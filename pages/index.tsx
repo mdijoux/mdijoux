@@ -126,7 +126,7 @@ const Resume: NextPage = () => {
                         <ul className={resumeStyles.tags}>
                             <li>Agile</li>
                             <li>Git</li>
-                            <li>Tensorflow</li>
+                            <li>Pytorch</li>
                             <li>Docker</li>
                             <li>Kubernetes</li>
                             <li>Testing</li>

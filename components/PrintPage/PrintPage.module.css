@@ -35,7 +35,7 @@
 
 .root h2 {
     font-size: 12pt;
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 .root p {
@@ -126,11 +126,11 @@
 
 .job {
     font-size: 18pt;
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 .root > footer {
-    background: var(--primary-color);
+    background: var(--accent-color);
     height: 8mm;
     
 }

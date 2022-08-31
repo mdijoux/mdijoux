@@ -17,7 +17,7 @@
 }
 
 .rater > .full {
-    background: var(--primary-color);
+    background: var(--accent-color);
 }
 
 .rater > .empty {

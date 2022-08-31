@@ -7,9 +7,9 @@
 
 .root > svg {
     margin-right: 4mm;
-    background: var(--primary-color);
+    background: var(--accent-color);
     border-radius: 100%;
-    border: 3pt solid var(--primary-color);
+    border: 3pt solid var(--accent-color);
     height: 12pt;
     width: 12pt;
 }
