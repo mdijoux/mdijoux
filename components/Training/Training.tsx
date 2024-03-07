@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Training.module.css";
+import { MapMarker } from "../icons/MapMarker";
 
 type Props = {
     institution: string;
@@ -17,7 +18,9 @@ export const Training = ({institution, period, name, location}: Props) => {
             </h3>
             <h4>
                 <span>{institution}</span>
-                <span className={styles.location}>{location}</span>
+                <span className={styles.location}>
+                    <MapMarker className={styles.marker} />
+                    {location}</span>
             </h4>
         </li>
     )

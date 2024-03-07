@@ -51,79 +51,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-
-    --bg-color-dark: color-mix(in srgb, var(--primary-color-darkest), color-mix(in srgb, #414439, black 25%) 95%);
-    --bg-color-light: color-mix(in srgb, var(--bg-color-dark), white 15%);
+    --bg-color-light: color-mix(in srgb, var(--primary-color-darkest), #414439 85%);
+    --bg-color-dark: var(--primary-color);
   
-    --text-color-light: white;
-    --text-color-dark: color-mix(in srgb, white, black 5%);
+    --text-color-dark: white;
+    --text-color-light: color-mix(in srgb, white, black 95%);
   }
 }
 
-@media print {
-  [id^=react-joyride-],
-  .not-printable {
-    display: none !important;
-  }
-}
-
-
-@keyframes beacon-inner {
-  0% {
-    transform: translate(-50%, -50%) scale(1);
-  }
-
-  45% {
-    transform: translate(-50%, -50%) scale(0.75);
-  }
-
-  100% {
-    transform: translate(-50%, -50%) scale(1);
-  }
-}
-
-@keyframes beacon-outer {
-  0% {
-    transform: scale(1);
-  }
-
-  45% {
-    transform: scale(0.75);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-
-.react-joyride__beacon > span:first-of-type {
-  background-color: var(--primary-color-darkest) !important;
-  z-index: 2;
-  opacity: 1 !important;
-  /* animation: none !important; */
-  animation: 1.2s ease-in-out 0s infinite normal none running beacon-inner !important;
-  transform-origin: center center;
-  /* animation-delay: 600ms; */
-}
-
-.react-joyride__beacon > span:last-of-type {
-  border-color: var(--primary-color) !important;
-  background-color: var(--primary-color-darker) !important;
-  z-index: 1;
-  opacity: 1 !important;
-
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-
-  animation: 1.2s ease-in-out 0s infinite normal none running beacon-outer !important;
-  animation-delay: 200ms !important;
-}
-
-.react-joyride__beacon {
-  --color: var(--primary-color);
-  --bg-color: #FFFFFF22;
-}
-
-#react-joyride-step-0 + #react-joyride-portal > .react-joyride__overlay > .react-joyride__spotlight {
-  border-radius: 50% !important;
+svg path[fill] {
+  fill: currentColor;
 }

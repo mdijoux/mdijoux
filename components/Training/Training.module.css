@@ -31,13 +31,11 @@
     font-size: 8pt;
 }
 
-.location::before {
+.marker {
     display: inline-block;
-    content: "";
     height: 7pt;
     width: 7pt;
     margin-right: 1mm;
-    background: url("/map-marker.svg");
     background-size: contain;
     background-repeat: no-repeat;
     vertical-align: -9.5%;
