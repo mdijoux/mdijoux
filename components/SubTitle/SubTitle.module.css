@@ -1,0 +1,7 @@
+.root {
+    font-family: var(--font-geist-sans);
+    font-size: 12pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-subtitle);
+}

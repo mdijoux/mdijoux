@@ -38,24 +38,45 @@
   --primary-color: #e9c46a;
   --primary-color-darker: #2a9d8f;
   --primary-color-darkest: #264653;
-  --accent-color: var(--primary-color-darker);
+  --accent-color: var(--primary-color);
 
-  --accent-color-dark: var(--accent-color);
+  --base-black: color-mix(in srgb, white, #414439 90%);
+  --base-white: color-mix(in srgb, white, #414439 15%);
 
-  --bg-color-dark: color-mix(in srgb, var(--primary-color-darkest), #414439 85%);
-  --bg-color-light: white;
+  --bg-primary: white;
+  --bg-secondary: color-mix(in srgb, var(--primary-color-darker), #414439 100%);
 
-  --text-color-light: white;
-  --text-color-dark: color-mix(in srgb, white, black 95%);
+  --text-title: var(--base-black);
+  --text-subtitle: var(--accent-color);
+  --text-base: var(--base-black);
+  --bg-footer: var(--primary-color-darker);
+}
+
+:root aside {
+  --text-title: var(--base-white);
+  --text-subtitle: var(--primary-color);
+  --text-base: var(--base-white);
+  --bg-tag: var(--primary-color);
+  --text-tag: var(--base-black);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color-light: color-mix(in srgb, var(--primary-color-darkest), #414439 85%);
-    --bg-color-dark: var(--primary-color);
-  
-    --text-color-dark: white;
-    --text-color-light: color-mix(in srgb, white, black 95%);
+    --text-title: var(--base-white);
+    --text-subtitle: var(--accent-color);
+    --text-base: var(--base-white);
+    --bg-footer: var(--primary-color-darker);
+
+    --bg-primary: color-mix(in srgb, var(--primary-color-darkest), #414439 85%);
+    --bg-secondary: var(--primary-color);
+  }
+
+  :root aside {
+    --text-title: var(--base-black);
+    --text-subtitle: var(--primary-color-darker);
+    --text-base: var(--base-black);
+    --bg-tag: var(--base-black);
+    --text-tag: var(--base-white);
   }
 }
 

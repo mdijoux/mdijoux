@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
-import { HeaderBullet } from "../icons";
+
 import styles from "./Section.module.css";
+import { Title } from "../Title";
 
 type Props = {
     name: string;
@@ -10,10 +11,9 @@ type Props = {
 export const Section = ({name, children}: Props) => {
     return (
         <section className={styles.root}>
-            <h1>
-                <HeaderBullet className={styles.bullet} />
+            <Title>
                 {name}
-            </h1>
+            </Title>
             <div className={styles.content}>{children}</div>
         </section>
     );

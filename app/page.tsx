@@ -12,6 +12,7 @@ import { PrintDocument } from '../components/PrintDocument';
 
 import resumeStyles from '../styles/Resume.module.css';
 import coverLetterStyles from "../styles/CoverLetter.module.css";
+import { SubTitle } from '../components/SubTitle';
 
 const Resume: NextPage = () => {
     return (
@@ -33,14 +34,14 @@ const Resume: NextPage = () => {
                         </ul>
                     </Section>
                     <Section name="Compétences">
-                        <h2>Languages</h2>
+                        <SubTitle>Langages</SubTitle>
                         <ul className={resumeStyles.skills}>
                             <Skill name="Javascript" rate={5} />
                             <Skill name="HTML/CSS" rate={5} />
                             <Skill name="PHP" rate={4} />
                             <Skill name="SQL" rate={4} />
                         </ul>
-                        <h2>Technologies</h2>
+                        <SubTitle>Technologies</SubTitle>
                         <ul className={resumeStyles.skills}>
                             <Skill name="ReactJS" rate={5} />
                             <Skill name="GraphQL/Apollo" rate={4} />

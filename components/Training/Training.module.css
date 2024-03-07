@@ -3,14 +3,9 @@
     flex-direction: column;
 }
 
-.root h3 {
+.subtitle {
     display: flex;
-    flex-direction: row;
-
-    font-size: 12pt;
-    text-transform: uppercase;
-    color: var(--accent-color);
-    font-weight: 600;
+    flex-direction: row;    
 }
 
 .root h4 {
@@ -19,7 +14,6 @@
 
     display: flex;
     flex-direction: row;
-
 }
 
 .root h4 > :not(.location) {

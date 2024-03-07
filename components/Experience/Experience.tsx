@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import styles from "./Experience.module.css";
+import { SubTitle } from "../SubTitle";
 
 type Props = {
     place: string;
@@ -11,10 +12,10 @@ type Props = {
 export const Experience = ({place, period, name, children}: Props) => {
     return (
         <li className={styles.root}>
-            <h3>
+            <SubTitle className={styles.subtitle}>
                 <span className={styles.place}>{place}</span>
                 <span className={styles.period}>{period}</span>
-            </h3>
+            </SubTitle>
             <h4>{name}</h4>
             <p>{children}</p>
         </li>

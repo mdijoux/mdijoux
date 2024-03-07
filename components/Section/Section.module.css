@@ -8,11 +8,3 @@
 .content {
     padding: 0 2mm;
 }
-
-.bullet {
-    display: inline-block;
-    height: 5mm;
-    width: 7mm;
-    margin-right: 2mm;
-    transform: rotateY(180deg);
-}

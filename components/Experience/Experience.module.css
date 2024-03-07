@@ -4,13 +4,9 @@
     border-bottom: 1pt solid #e3e3e3;
 }
 
-.root h3 {
+.subtitle {
     display: flex;
     flex-direction: row;
-
-    font-size: 12pt;
-    text-transform: uppercase;
-    color: var(--accent-color);
 }
 
 .root h4 {

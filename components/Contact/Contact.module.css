@@ -7,9 +7,10 @@
 
 .root > svg {
     margin-right: 4mm;
-    background: var(--accent-color);
+    background: var(--bg-tag);
     border-radius: 100%;
-    border: 3pt solid var(--accent-color);
+    border: 3pt solid var(--bg-tag);
     height: 12pt;
     width: 12pt;
+    color: var(--text-tag);
 }

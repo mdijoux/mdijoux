@@ -20,26 +20,12 @@
     isolation: isolate;
     z-index: 0;
 
-    background-color: var(--bg-color-light);
-    color: var(--text-color-dark);
+    background-color: var(--bg-primary);
+    color: var(--text-base);
 }
 
 .root #sh1 {
     fill: var(--primary-color);
-}
-
-.root h1,
-.root h2 {
-    text-transform: uppercase;
-}
-
-.root h1 {
-    font-size: 18pt;
-}
-
-.root h2 {
-    font-size: 12pt;
-    color: var(--accent-color);
 }
 
 .root p {
@@ -66,7 +52,6 @@
     --gutter: 8pt;
     --size: calc(30mm + var(--gutter));
     
-
     height: var(--size);
     width: var(--size);
 
@@ -135,9 +120,8 @@
 }
 
 .root > footer {
-    background: var(--accent-color);
-    height: 8mm;
-    
+    background: var(--bg-footer);
+    height: 8mm;   
 }
 
 .content {
