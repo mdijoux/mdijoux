@@ -26,7 +26,7 @@ const Resume: NextPage = () => {
                 <aside>
                     <Section name="Contact">
                         <ul className={resumeStyles.contacts}>
-                            <Contact icon={<Mail />}>marc.dijoux@me.com</Contact>
+                            <Contact icon={<Mail />}>marc@dijoux.me</Contact>
                             <Contact icon={<Phone />}>+262 692 44 71 63</Contact>
                             <Contact icon={<LinkedIn />}><a href="https://linkedin.com/in/mdijoux">linkedin.com/in/mdijoux</a></Contact>
                             <Contact icon={<Github />}><a href="https://github.com/mdijoux">github.com/mdijoux</a></Contact>

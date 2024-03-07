@@ -5,13 +5,17 @@
 
 .root aside {
     padding: 7mm 10mm;
-    background: #414439;
+    background: var(--bg-color-dark);
     width: 30%;
-    color: white;
+    color: var(--text-color-light);
 
     display: flex;
     flex-direction: column;
     gap: 7mm;
+
+    border-radius: 0 8px 8px 0;
+
+    --accent-color: var(--accent-color-dark);
 }
 
 .root aside ul > li a {

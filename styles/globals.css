@@ -11,30 +11,53 @@
 :root {
   --page-width: 210mm;
   --page-height: 296.9mm;
-  --primary-color: #45A345;
+
+  /* --bg-color-dark: #414439; */
+
+  /* --primary-color: #45A345;
   --primary-color-darker: #2F893F;
   --primary-color-darkest: #255C2C;
-  --accent-color: var(--primary-color);
+  --accent-color: var(--primary-color); */
+  
 
   /* --primary-color: #4cc9f0;
   --primary-color-darker: #4361ee;
   --primary-color-darkest: #3a0ca3;
-  --accent-color: var(--primary-color); */
+  --accent-color: var(--primary-color-darker); */
 
   /* --primary-color: #b298dc;
   --primary-color-darker: #a663cc;
   --primary-color-darkest: #6f2dbd;
-  --accent-color: var(--primary-color); */
+  --accent-color: var(--primary-color-darker); */
 
   /* --primary-color: #57cc99;
   --primary-color-darker: #38a3a5;
   --primary-color-darkest: #22577a;
   --accent-color: var(--primary-color-darker); */
 
-  /* --primary-color: #e9c46a;
+  --primary-color: #e9c46a;
   --primary-color-darker: #2a9d8f;
   --primary-color-darkest: #264653;
-  --accent-color: var(--primary-color-darker); */
+  --accent-color: var(--primary-color-darker);
+
+  --accent-color-dark: var(--accent-color);
+
+  --bg-color-dark: color-mix(in srgb, var(--primary-color-darkest), #414439 85%);
+  --bg-color-light: white;
+
+  --text-color-light: white;
+  --text-color-dark: color-mix(in srgb, white, black 95%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+    --bg-color-dark: color-mix(in srgb, var(--primary-color-darkest), color-mix(in srgb, #414439, black 25%) 95%);
+    --bg-color-light: color-mix(in srgb, var(--bg-color-dark), white 15%);
+  
+    --text-color-light: white;
+    --text-color-dark: color-mix(in srgb, white, black 5%);
+  }
 }
 
 @media print {
