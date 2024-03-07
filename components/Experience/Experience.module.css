@@ -13,10 +13,6 @@
     color: var(--accent-color);
 }
 
-.root h3 > div:first-of-type {
-    flex: 1;
-}
-
 .root h4 {
     font-size: 10pt;
     font-weight: 500;
@@ -24,4 +20,15 @@
 
 .root p {
     margin: 3mm 0;
+}
+
+.place {
+    flex: 1;
+    font-weight: 600;
+}
+
+.period {
+    font-family: var(--font-geist-sans);
+    font-weight: 500;
+    font-size: 11pt;
 }

@@ -12,7 +12,7 @@ export const Training = ({institution, period, name, location}: Props) => {
     return (
         <li className={styles.root}>
             <h3>
-                <span>{name}</span>
+                <span className={styles.name}>{name}</span>
                 <span className={styles.period}>{period}</span>
             </h3>
             <h4>

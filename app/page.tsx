@@ -1,7 +1,5 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import dynamic from 'next/dynamic'
-import { BeaconRenderProps, CallBackProps, Step, ACTIONS, EVENTS, STATUS } from 'react-joyride';
 
 import { Contact } from '../components/Contact';
 import { Experience } from '../components/Experience';
@@ -14,84 +12,9 @@ import { PrintDocument } from '../components/PrintDocument';
 
 import resumeStyles from '../styles/Resume.module.css';
 import coverLetterStyles from "../styles/CoverLetter.module.css";
-import { useCallback, useEffect, useState } from 'react';
-
-const steps: Step[] = [
-    {
-        target: "[data-tour=start]",
-        content: "Salutations visiteurs!",
-        placement: "right",
-        placementBeacon: "left"
-    },
-    {
-        target: `.${resumeStyles.contacts}`,
-        title: "Contact",
-        content: 'Vous pouvez me joindre ou me contacter ici',
-    },
-    {
-        target: `.${resumeStyles.tags}`,
-        content: 'Many more content',
-        placement: "center"
-    },
-    {
-        target: `.${resumeStyles.experiences}`,
-        content: 'What about my experiences!'
-    },
-    {
-        target: `.${resumeStyles.curriculum}`,
-        content: 'What about my experiences!'
-    }
-]
-
-const Joyride = dynamic(
-    () => import('react-joyride'),
-    { ssr: false }
-);
-
-const Hand = (props: BeaconRenderProps) => (<button className={resumeStyles.beacon} {...props} ><span className={resumeStyles.hand}>👋🏻</span></button>)
-  
 
 const Resume: NextPage = () => {
-
-    const [state, setState] = useState({stepIndex: 0, steps, run: true});
-
-    const callback = useCallback((data: CallBackProps) => {
-        const {action, index, type, status} = data;
-        switch(type) {
-            case EVENTS.STEP_AFTER:
-                return setState((prevState) => ({
-                    ...prevState,
-                    stepIndex: index + (action === ACTIONS.PREV ? -1 : 1)
-                }));
-            default:
-                console.log(data);
-        }
-
-
-        if (action === ACTIONS.CLOSE || [STATUS.FINISHED, STATUS.SKIPPED, STATUS.PAUSED].includes(status)) {
-            return setState((prevState) => ({
-                ...prevState,
-                stepIndex: 0,
-                run: false
-            }));
-        }
-
-        console.log(data);
-    }, [setState]);
-
-    console.log(state);
-
-    useEffect(() => {
-        // Reset the tour at the end
-        if(!state.run && state.stepIndex === 0) {
-            setState((prevState)=> ({...prevState, run: true}))
-        }
-    }, [state])
-
     return (
-        <>
-        <Joyride steps={state.steps} continuous run={state.run} beaconComponent={Hand} stepIndex={state.stepIndex} callback={callback} />
-       
         <PrintDocument>
             <Head>
                 <title>Marc DIJOUX - CV</title>
@@ -155,7 +78,7 @@ const Resume: NextPage = () => {
                     <Section name='Expérience professionelle'>
                         <ul className={resumeStyles.experiences}>
                             <Experience
-                                place='Simplon.Prod'
+                                place='Simplon'
                                 period="2019 - aujourd'hui"
                                 name='Lead developer'>
                                 Intégration du projet <b>Simplonline</b> en tant que &quot;Lead developer front&quot; au sein d&apos;une
@@ -259,7 +182,6 @@ const Resume: NextPage = () => {
                 </Section>
             </PrintPage>
         </PrintDocument>
-        </>
     )
 }
 

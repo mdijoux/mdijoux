@@ -12,8 +12,8 @@ export const Experience = ({place, period, name, children}: Props) => {
     return (
         <li className={styles.root}>
             <h3>
-                <div>{place}</div>
-                <div>{period}</div>
+                <span className={styles.place}>{place}</span>
+                <span className={styles.period}>{period}</span>
             </h3>
             <h4>{name}</h4>
             <p>{children}</p>
