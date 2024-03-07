@@ -116,7 +116,7 @@
 
 .job {
     font-size: 18pt;
-    color: var(--accent-color);
+    color: var(--text-subtitle);
 }
 
 .root > footer {

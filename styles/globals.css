@@ -16,67 +16,58 @@
 
   /* --primary-color: #45A345;
   --primary-color-darker: #2F893F;
-  --primary-color-darkest: #255C2C;
-  --accent-color: var(--primary-color); */
-  
+  --primary-color-darkest: #255C2C; */
 
   /* --primary-color: #4cc9f0;
   --primary-color-darker: #4361ee;
-  --primary-color-darkest: #3a0ca3;
-  --accent-color: var(--primary-color-darker); */
+  --primary-color-darkest: #3a0ca3; */
 
   /* --primary-color: #b298dc;
   --primary-color-darker: #a663cc;
-  --primary-color-darkest: #6f2dbd;
-  --accent-color: var(--primary-color-darker); */
+  --primary-color-darkest: #6f2dbd; */
+
 
   /* --primary-color: #57cc99;
   --primary-color-darker: #38a3a5;
-  --primary-color-darkest: #22577a;
-  --accent-color: var(--primary-color-darker); */
+  --primary-color-darkest: #22577a; */
 
   --primary-color: #e9c46a;
   --primary-color-darker: #2a9d8f;
   --primary-color-darkest: #264653;
-  --accent-color: var(--primary-color);
 
-  --base-black: color-mix(in srgb, white, #414439 90%);
-  --base-white: color-mix(in srgb, white, #414439 15%);
+  --base-black: color-mix(in srgb, #414439, black 10%);
+  --base-white: color-mix(in srgb, white, var(--base-black) 15%);
 
   --bg-primary: white;
-  --bg-secondary: color-mix(in srgb, var(--primary-color-darker), #414439 100%);
+  --bg-secondary: color-mix(in srgb, var(--primary-color-darker), var(--base-black) 95%);
 
-  --text-title: var(--base-black);
-  --text-subtitle: var(--accent-color);
+  --text-title: var(--text-base);
+  --text-subtitle: var(--primary-color);
   --text-base: var(--base-black);
   --bg-footer: var(--primary-color-darker);
 }
 
 :root aside {
-  --text-title: var(--base-white);
-  --text-subtitle: var(--primary-color);
+  --text-title: var(--text-base);
+  --text-subtitle: var(--primary-color-darker);
   --text-base: var(--base-white);
-  --bg-tag: var(--primary-color);
-  --text-tag: var(--base-black);
+  --bg-tag: var(--text-subtitle);
+  --text-tag: var(--text-base);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text-title: var(--base-white);
-    --text-subtitle: var(--accent-color);
+    --text-subtitle: var(--primary-color);
     --text-base: var(--base-white);
     --bg-footer: var(--primary-color-darker);
 
-    --bg-primary: color-mix(in srgb, var(--primary-color-darkest), #414439 85%);
+    --bg-primary: color-mix(in srgb, var(--primary-color-darkest), var(--base-black) 85%);
     --bg-secondary: var(--primary-color);
   }
 
   :root aside {
-    --text-title: var(--base-black);
     --text-subtitle: var(--primary-color-darker);
     --text-base: var(--base-black);
-    --bg-tag: var(--base-black);
-    --text-tag: var(--base-white);
   }
 }
 

@@ -17,20 +17,10 @@
 }
 
 .rater > .full {
-    background: var(--text-accent-secondary);
+    background: var(--text-subtitle);
 }
 
 .rater > .empty {
-    background: var(--text-normal-secondary);
+    background: var(--text-base);
 }
 
-@media (prefers-color-scheme: dark) {
-    .rater > .full {
-        background: var(--text-accent-primary);
-    }
-    
-    .rater > .empty {
-        background: var(--text-normal-primary);
-    }
-
-}
