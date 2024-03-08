@@ -15,8 +15,8 @@
   /* --bg-color-dark: #414439; */
 
   /* --primary-color: #45A345;
-  --primary-color-darker: #2F893F;
-  --primary-color-darkest: #255C2C; */
+  --primary-color-darker: #297a37;
+  --primary-color-darkest: #173b1c; */
 
   /* --primary-color: #4cc9f0;
   --primary-color-darker: #4361ee;
@@ -26,7 +26,6 @@
   --primary-color-darker: #a663cc;
   --primary-color-darkest: #6f2dbd; */
 
-
   /* --primary-color: #57cc99;
   --primary-color-darker: #38a3a5;
   --primary-color-darkest: #22577a; */
@@ -35,7 +34,11 @@
   --primary-color-darker: #2a9d8f;
   --primary-color-darkest: #264653;
 
-  --base-black: color-mix(in srgb, #414439, black 10%);
+  /* --dark: #414458; */
+  /* --dark: #414439; */
+  --dark: var(--primary-color-darkest);
+
+  --base-black: color-mix(in srgb, var(--dark), black 20%);
   --base-white: color-mix(in srgb, white, var(--base-black) 15%);
 
   --bg-primary: white;
